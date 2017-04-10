@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Author: Hsiu-Man Angela Wu
+ Student #: A00750330        -->
+<head>
+	<title>TeamArt Millwork</title>
+	<meta charset="utf-8" />
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant:400,400i%7CFira+Sans:300">
+
+	<script src="js/jquery-3.1.1.js"></script>
+
+	<script>
+		$(document).ready(function() {
+		  var bgArray = ['wbg1.jpg', 'wbg2.jpg', 'wbg3.jpg', 'wbg4.jpg', 'wbg5.jpg'];
+		  var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
+		  var path = 'images/';
+		  var imageUrl = path + bg;
+		  $('.heading_block').css('background-image', 'url(' + imageUrl +')');
+		});
+	</script>
+</head>
+<body>
+	<header></header>
+	
+	<div id="header_container">
+		<a href="index.html"><img id="logo" src="images/talogo.png" alt="TeamArt Millwork Logo" /></a>
+
+		<nav>
+			<ul>
+				<li class="nav_item"><a class="nav_link" href="index.html">HOME</a></li>
+				<li class="nav_item"><a class="nav_link" href="about.html">ABOUT</a></li>
+				<li class="nav_item"><a class="nav_link" href="projects.html">PROJECTS</a></li>
+				<li class="nav_item"><a class="nav_link" href="services.html">SERVICES</a></li>
+				<li class="nav_item"><a class="nav_link" href="careers.html">CAREERS</a></li>
+				<li class="nav_item" id="current_page">CONTACT</li>
+			</ul>
+		</nav>
+	</div>
+
+
+	<div class="heading_bar"></div>
+	<section class="heading_block avoid_nav">
+		<div class="content_container">
+			<h1>Contact Us</h1>
+		</div>
+	</section>
+
+	<section id="contactus">
+		<div class="content_container">
+			<p>	​<strong>TeamArt Millwork Company</strong><br />
+				81 East Kent Avenue, Vancouver, BC V5X 2X5<br />
+				Office: (604) 323-1671<br />
+				Fax: (604) 322-1671<br />
+				<a class="email" href="mailto:office@teamartmillwork.com">office@teamartmillwork.com</a></p>
+			<p>	<strong>Business Hours</strong><br />
+				Monday-Saturday: 9am to 5pm<br />
+				Sundays: Closed</p>
+
+			<div id="contact_form">
+				<h3 id="form_heading">General Inquiry:</h3>
+
+				<form action="php/formmail.php" method="post">
+
+					<label for="company">Company:</label>
+					<input	type="text"
+							id="company"
+							name="company"/>
+					<br />
+					<label for="firstname">First Name:</label>
+					<input	type="text"
+							id="firstname"
+							name="firstname"/>
+					<br />
+					<label for="lastname">Last Name:</label>
+					<input	type="text"
+							id="lastname"
+							name="lastname"/>
+					<br />
+					<label for="email">Email Address:</label>
+					<input 	type="text"
+							id="email"
+							name="email" />
+					<br />
+					<label for="details">Details:</label>
+					<br />
+					<textarea name="details" id="details"></textarea>
+					<br />
+					<input  type="submit" 
+							value="Submit"
+							class="submit_button"
+							id="submit"	/>
+					<!--
+					<br />
+					<label id="rmbr_me" for="checkbox_style">Remember Me:</label>
+					<input 	type="checkbox"
+							checked="checked"
+							id="checkbox_style" />
+					-->
+					
+					<input 	type="hidden"
+							id="recipient"
+							name="recipient" 
+							value="hm.angela.wu@gmail.com" />
+	
+					<input 	type="hidden"
+							id="redirect"
+							name="redirect" 
+							value="../form/success.html" />
+							
+					<input 	type="hidden"
+							id="error_redirect"
+							name="error_redirect"
+							value="../form/error.html" />
+				
+
+				</form>
+
+			</div>
+
+		<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDN0Ty8XoNNtLHR0F5AaPkqBFcoY6wIqno&q=TeamArt+Millwork+Co+Ltd,Vancouver,+BC" allowfullscreen>
+		</iframe>
+		</div>
+	</section>
+
+
+	<section id="foot_separation"></section>
+
+	
+	<footer class="align_center">
+		<div class="content_container">
+			<p id = "foot_address"><strong>TeamArt Millwork Company Ltd.</strong><br />
+			81 East Kent Avenue&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;Vancouver, BC V5X 2X5 <br/>
+			Tel: (604) 323-1671&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;Fax: (604) 322-1671&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;office@teamartmillwork.com</p>
+
+			<ul>
+				<li><a class="foot_link" href="about.html">About</a></li>
+				<li><a class="foot_link" href="projects.html">Projects</a></li>
+				<li><a class="foot_link" href="services.html">Services</a></li>
+				<li><a class="foot_link" href="careers.html">Careers</a></li>
+				<li><a class="foot_link" href="contact.html">Contact</a></li>
+				<li><a class="foot_link" href="site.html">Site Map</a></li>
+			</ul>
+			<p id="foot_text">Copyright &copy; 2016. TeamArt Millwork Company Ltd. </p>
+		</div>
+	</footer>
+
+
+
+</body>
+</html>

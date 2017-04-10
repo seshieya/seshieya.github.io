@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Author: Hsiu-Man Angela Wu
+ Student #: A00750330        -->
+<head>
+	<title>TeamArt Millwork</title>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant:400,400i%7CFira+Sans:300">
+
+	<script src="js/jquery-3.1.1.js"></script>
+
+	<script>
+		$(document).ready(function() {
+		  var bgArray = ['wbg1.jpg', 'wbg2.jpg', 'wbg3.jpg', 'wbg4.jpg', 'wbg5.jpg'];
+		  var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
+		  var path = 'images/';
+		  var imageUrl = path + bg;
+		  $('.heading_block').css('background-image', 'url(' + imageUrl +')');
+		});
+	</script>
+</head>
+<body>
+	<header></header>
+	
+	<div id="header_container">
+		<a href="index.html"><img id="logo" src="images/talogo.png" alt="TeamArt Millwork Logo" /></a>
+
+		<nav>
+			<ul>
+				<li class="nav_item"><a class="nav_link" href="index.html">HOME</a></li>
+				<li class="nav_item"><a class="nav_link" href="about.html">ABOUT</a></li>
+				<li class="nav_item"><a class="nav_link" href="projects.html">PROJECTS</a></li>
+				<li class="nav_item" id="current_page">SERVICES</li>
+				<li class="nav_item"><a class="nav_link" href="careers.html">CAREERS</a></li>
+				<li class="nav_item"><a class="nav_link" href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
+
+
+	<div class="heading_bar"></div>
+	<section class="heading_block avoid_nav">
+		<div class="content_container">
+			<h1>Services</h1>
+		</div>
+	</section>
+
+	
+	<section id="services">
+		<div class="content_container">
+
+		<table>
+			<tr>
+				<th id="column_left"></th>
+				<th id="column_right"></th>
+			</tr>
+			<tr id="row1">
+				<td class="column_heading"><h3>Custom Design</h3></td>
+				<td class="column_heading"><h3>Finishings</h3></td>
+			<tr>
+				<td class="column_details">
+				<p>TeamArt Millwork can provide an estimate based on existing design drawings or create drawings tailored to your needs. We have inhouse designers that will consult with you every step of the way.</p>
+
+				
+				<figure class="figure">
+				 	<img src="images/serv/design.jpg" alt="Cabinet Drawing" />
+				 	<figcaption>Cabinet Drawing</figcaption>
+				</figure>	
+				</td>
+			
+				<td class="column_details">
+				<p>Our inhouse experts can use various techniques to achieve the look you desire.
+				Finishings include staining, painting, custom colour matching, and more.</p>
+				<br />
+
+				
+				<figure class="figure">
+				 	<img src="images/serv/finishes.jpg" alt="Different Finishes" />
+				 	<figcaption>Different finishes</figcaption>
+				</figure>
+						
+				</td>
+			</tr>
+			<tr id="row2">
+				<td class="column_heading"><h3>CNC Millwork</h3></td>
+				<td class="column_heading"><h3>Wall Panels &amp; Ceilings</h3></td>
+			</tr>
+			<tr>
+				<td class="column_details">
+				<p>We operate a CNC machine that can carve any design and create intricate patterns.</p>
+
+				
+				<figure class="figure">
+				 	<img src="images/serv/cnc.jpg" alt="CNC produced panel"  />
+				 	<figcaption>CNC produced panel</figcaption>
+				</figure>
+				</td>
+				<td class="column_details">
+				<p>Elaborate wall panels and ceiling millwork are among our specialties.</p>
+
+				
+				<figure class="figure">
+				 	<img src="images/serv/panel.jpg" alt="Ceiling millwork"/>
+				 	<figcaption>Ceiling and wall millwork</figcaption>
+				</figure>
+				</td>
+			</tr>
+			<tr id="row3">
+				<td class="column_heading"><h3>Door Restoration</h3></td>
+			</tr>
+			<tr>
+				<td class="column_details">
+				<p>We can repair or recreate your existing door to match the other doors in your office or home.</p>
+				
+				<figure class="figure">
+				 	<img src="images/serv/door.jpg" alt="Door Restoration" />
+				 	<figcaption>
+				 		Restored door, before and after
+				 	</figcaption>
+				</figure>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</section>
+
+	<section id="foot_separation"></section>
+
+	
+	<footer class="align_center">
+		<div class="content_container">
+			<p id = "foot_address"><strong>TeamArt Millwork Company Ltd.</strong><br />
+			81 East Kent Avenue&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;Vancouver, BC V5X 2X5 <br/>
+			Tel: (604) 323-1671&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;Fax: (604) 322-1671&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;office@teamartmillwork.com</p>
+
+			<ul>
+				<li><a class="foot_link" href="about.html">About</a></li>
+				<li><a class="foot_link" href="projects.html">Projects</a></li>
+				<li><a class="foot_link" href="services.html">Services</a></li>
+				<li><a class="foot_link" href="careers.html">Careers</a></li>
+				<li><a class="foot_link" href="contact.html">Contact</a></li>
+				<li><a class="foot_link" href="site.html">Site Map</a></li>
+			</ul>
+			<p id="foot_text">Copyright &copy; 2016. TeamArt Millwork Company Ltd. </p>
+		</div>
+	</footer>
+
+</body>
+</html>
